@@ -31,13 +31,13 @@ onSpeak = (e) => {
     writeMessage(msg);
     checkNumber(msg);
     };
-    
+
 
 //Listen for the result event
 recognition.addEventListener('result', onSpeak);
-  
 
- 
+
+
  // diplay msg to the screen
 writeMessage = (msg) => {
     msgEl.innerHTML = `
@@ -45,9 +45,9 @@ writeMessage = (msg) => {
     <span class="box"> ${msg}</span>
     `;
 
-}; 
+};
 
-// Check the msg againist the number 
+// Check the msg againist the number
 checkNumber = (msg) => {
     const num = +msg;
 
